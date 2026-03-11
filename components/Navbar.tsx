@@ -14,10 +14,10 @@ const Navbar = () => {
           </div>
 
           <ul className="links"> 
-            <a href="#">Products</a>
-            <a href="#">Pricing</a>
-            <a href="#">Community</a>
-            <a href="#">Enterprise</a>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Enterprise</a></li>
           </ul>
         </div>
 
