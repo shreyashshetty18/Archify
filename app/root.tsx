@@ -9,7 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { get } from "http";
 import { getCurrentUser } from "lib/puter.action";
 
@@ -61,7 +61,7 @@ export default function App() {
         userId: user?.uuid || null,
         userName: user?.username || null,
       });
-      return true;
+      return !!user;
 
     } catch {
       setAuthState(DEFAULT_AUTH_STATE);
@@ -69,6 +69,18 @@ export default function App() {
     }
   return <Outlet />;
 }
+  useEffect(() => {
+    refreshAuth();
+  }, []);
+  const signIn = async () => {
+    await signIn();
+    return await refreshAuth();
+  };
+
+  const signOut = async () => {
+    signOut();
+    return await refreshAuth();
+  };
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
