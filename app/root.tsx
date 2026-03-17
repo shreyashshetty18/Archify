@@ -9,6 +9,9 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { useState } from "react";
+import { get } from "http";
+import { getCurrentUser } from "lib/puter.action";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -41,14 +44,31 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-const DEFAULT_AUTH_STATE = {
+const DEFAULT_AUTH_STATE: AuthState = {
   userId: null,
   userName: null,
   isSignedIn: false,
 };
 
 export default function App() {
+  const [authstate, setAuthState] = useState<AuthState>(DEFAULT_AUTH_STATE);
+
+  const refreshAuth = async () => {
+    try {
+      const user = await getCurrentUser();
+      setAuthState({
+        isSignedIn: !!user,
+        userId: user?.uuid || null,
+        userName: user?.username || null,
+      });
+      return true;
+
+    } catch {
+      setAuthState(DEFAULT_AUTH_STATE);
+      return false;
+    }
   return <Outlet />;
+}
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
