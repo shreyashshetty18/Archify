@@ -10,7 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import { useEffect, useState } from "react";
-import { get } from "http";
+
 import { getCurrentUser } from "lib/puter.action";
 
 export const links: Route.LinksFunction = () => [
