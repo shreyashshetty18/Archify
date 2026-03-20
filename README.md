@@ -1,6 +1,13 @@
-# Archify
+<div align="center">
+  <br />
+      <img src="public/readmehero.png" alt="Project Banner">
+    </a>
+  <br /></div>
+
 
 A modern, production-ready full-stack application built with React Router, Vite, and Tailwind CSS.
+
+# Archify - Architectural Showcase
 
 ## 🚀 Tech Stack
 
