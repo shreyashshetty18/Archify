@@ -2,16 +2,8 @@ import {Box} from "lucide-react";
 import Button from "./ui/Button";
 import {useOutletContext} from "react-router";
 
-export interface AuthContext {
-    isSignedIn: boolean;
-    userName: string | null;
-    signIn: () => Promise<void>;
-    signOut: () => Promise<void>;
-}
-
 const Navbar = () => {
-const authContext = useOutletContext<AuthContext>();
-    const { isSignedIn, userName, signIn, signOut } = authContext || {};
+    const { isSignedIn, userName, signIn, signOut } = useOutletContext<AuthContext>()
 
     const handleAuthClick = async () => {
         if(isSignedIn) {
