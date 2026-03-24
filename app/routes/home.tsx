@@ -11,6 +11,13 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return (<div className="home">
     <Navbar />
-    <h1 className="text-3xl text-indigo-700 font-extrabold">
-      Welcome to React Router!</h1></div>);
+    <section className="hero">
+      <div className="announce">
+        <div className="dot">
+          <div className="pulse"></div>
+        </div>
+        <p>Introducing Archify 2.0</p>
+      </div>
+    </section>
+  </div>);
 }
