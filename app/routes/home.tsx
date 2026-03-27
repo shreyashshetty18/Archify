@@ -1,4 +1,5 @@
 import Navbar from "components/Navbar";
+import Button from "components/ui/Button";
 import type { Route } from "./+types/home";
 
 export function meta({ }: Route.MetaArgs) {
@@ -20,6 +21,7 @@ export default function Home() {
       </div>
       <h1>Build Beautiful Spaces at the speed of thought with Archify</h1>
       <p className="subtitle">Archify is a AI-First Design environment that helps you visualize, render, and ship architectural projects faster.</p>
+      <Button variant="primary" size="lg">Get Started - It's Free!</Button>
     </section>
   </div>);
 }
