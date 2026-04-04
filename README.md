@@ -11,7 +11,7 @@ A modern, production-ready full-stack application built with React Router, Vite,
 
 ## 🚀 Tech Stack
 
-- **Framework:** [React Router](https://reactrouter.com/)
+- **Framework:** React Router
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Build Tool:** Vite
