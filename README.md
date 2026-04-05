@@ -52,20 +52,6 @@ Create an optimized production build:
 npm run build
 ```
 
-## 🐳 Docker Deployment
-
-Archify is fully prepared for containerized deployment using Docker.
-
-Build the Docker image:
-```bash
-docker build -t archify-app .
-```
-
-Run the container:
-```bash
-docker run -p 3000:3000 archify-app
-```
-
 ## 📂 Project Structure
 
 ```text
