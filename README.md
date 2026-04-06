@@ -4,7 +4,6 @@
     </a>
   <br /></div>
 
-
 A modern, production-ready full-stack application built with React Router, Vite, and Tailwind CSS.
 
 # Archify - Architectural Showcase
