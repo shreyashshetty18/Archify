@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="public/readmehero.png" alt="Project Banner">
+      <img src="public/readmehero.png" alt="Archify - Architectural Showcase" />
     </a>
   <br /></div>
 
