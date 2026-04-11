@@ -14,7 +14,7 @@ A modern, production-ready full-stack application built with React Router, Vite,
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Build Tool:** Vite
-- **Containerization:** Docker
+
 
 ## 📦 Getting Started
 
