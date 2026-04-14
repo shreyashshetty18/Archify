@@ -23,7 +23,7 @@ A modern, production-ready full-stack application built with React Router, Vite,
 Ensure you have the following installed:
 - Node.js (v18 or higher recommended)
 - npm, pnpm, or yarn
-- Docker (optional, for containerized deployment)
+- Docker (optional)
 
 ### Installation
 
