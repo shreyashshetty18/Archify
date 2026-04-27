@@ -4,9 +4,9 @@
     </a>
   <br /></div>
 
-A modern, production-ready full-stack application built with React Router, Vite, and Tailwind CSS.
-
 # Archify - Architectural Showcase 🏠
+
+Archify is an AI-first design environment tailored for architects and designers to visualize, render, and ship projects with unprecedented speed. By transforming conceptual ideas into beautiful spaces at the speed of thought, it provides a high-performance workspace that bridges the gap between imagination and reality. Built with React Router and integrated with Puter.js, Archify offers a modern, seamless experience for bringing architectural visions to life.
 
 ## 🚀 Tech Stack
 
