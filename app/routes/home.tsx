@@ -1,5 +1,7 @@
 import Navbar from "components/Navbar";
 import type { Route } from "./+types/home";
+import { ArrowRight } from "lucide-react";
+import Button from "components/ui/Button";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -20,6 +22,10 @@ export default function Home() {
       </div>
       <h1>Build Beautiful Spaces at the speed of thought with Archify</h1>
       <p className="subtitle">Archify is a AI-First Design environment that helps you visualize, render, and ship architectural projects faster.</p>
+      <div className="actions">
+        <a href="#upload" className="cta">Start Building <ArrowRight /></a>
+        <Button variant="outline" size="lg" className="demo">Watch Demo</Button>
+      </div>
     </section>
   </div>);
 }
