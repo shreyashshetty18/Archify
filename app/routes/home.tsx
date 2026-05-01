@@ -1,6 +1,6 @@
 import Navbar from "components/Navbar";
 import type { Route } from "./+types/home";
-import { ArrowRight, Layers } from "lucide-react";
+import { ArrowRight, Clock, Layers } from "lucide-react";
 import Button from "components/ui/Button";
 
 export function meta({ }: Route.MetaArgs) {
@@ -53,7 +53,19 @@ export default function Home() {
         <div className="projects-grid">
           <div className="project-card group">
             <div className="preview">
-              <img src="https://www.roomsketcher.com/content/uploads/2021/12/2-bedroom-house-3d-floor-plan.jpg" alt="" />
+              <img src="https://www.roomsketcher.com/content/uploads/2021/12/2-bedroom-house-3d-floor-plan.jpg" alt="project preview" />
+              <div className="badge">
+                <span>Community</span>
+              </div>
+            </div>
+            <div className="card-body">
+              <div>
+                <h3>Project Manhattan</h3>
+                <div className="meta">
+                  <Clock size={12}/>
+                  <span>{new Date('02/02/2026').toLocaleDateString()}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
