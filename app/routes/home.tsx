@@ -63,7 +63,7 @@ export default function Home() {
                 <h3>Project Manhattan</h3>
                 <div className="meta">
                   <Clock size={12}/>
-                  <span>{new Date('02/02/2026').toLocaleDateString()}</span>
+                  <span>{new Date('02/05/2026').toLocaleDateString()}</span>
                 </div>
               </div>
             </div>

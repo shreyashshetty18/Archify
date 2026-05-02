@@ -54,13 +54,21 @@ npm run build
 ## 📂 Project Structure
 
 ```text
-├── app/               # Application code
-│   ├── routes/        # Route components and loaders
-│   ├── root.tsx       # Root entry point
-│   └── routes.ts      # Route definitions
-├── components/        # Reusable UI components
-├── public/            # Static assets
-├── Dockerfile         # Docker configuration
-├── package.json       # Project dependencies and scripts
-└── vite.config.ts     # Vite bundler configuration
+├── app/                    # Application code
+│   ├── routes/             # Route components and loaders
+│   ├── app.css             # Global CSS
+│   ├── root.tsx            # Root entry point
+│   └── routes.ts           # Route definitions
+├── components/             # Reusable UI components
+│   ├── ui/                 # Shared UI components
+│   └── Navbar.tsx          # Navigation bar component
+├── lib/                    # Library functions / server actions
+│   └── puter.action.ts     # Puter integration actions
+├── public/                 # Static assets
+├── Dockerfile              # Docker configuration
+├── package.json            # Project dependencies and scripts
+├── react-router.config.ts  # React Router configuration
+├── tsconfig.json           # TypeScript configuration
+├── type.d.ts               # Global type definitions
+└── vite.config.ts          # Vite bundler configuration
 ```
