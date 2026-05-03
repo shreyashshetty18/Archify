@@ -1,6 +1,6 @@
 import Navbar from "components/Navbar";
 import type { Route } from "./+types/home";
-import { ArrowRight, Clock, Layers } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Clock, Layers } from "lucide-react";
 import Button from "components/ui/Button";
 
 export function meta({ }: Route.MetaArgs) {
@@ -64,7 +64,11 @@ export default function Home() {
                 <div className="meta">
                   <Clock size={12}/>
                   <span>{new Date('02/05/2026').toLocaleDateString()}</span>
+                  <span>By Shreyash</span>
                 </div>
+              </div>
+              <div className="arrow">
+                <ArrowUpRight size={18} />
               </div>
             </div>
           </div>
