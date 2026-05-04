@@ -14,9 +14,7 @@ Archify is an AI-first design environment tailored for architects and designers 
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Build Tool:** Vite
-
-
-## 📦 Getting Started
+- **AI Integration:** Puter.js
 
 ### Prerequisites
 
@@ -24,32 +22,6 @@ Ensure you have the following installed:
 - Node.js (v18 or higher recommended)
 - npm, pnpm, or yarn
 - Docker (optional)
-
-### Installation
-
-Install the project dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with Hot Module Replacement (HMR):
-
-```bash
-npm run dev
-```
-
-The application will be available at `http://localhost:5173`.
-
-## 🛠️ Building for Production
-
-Create an optimized production build:
-
-```bash
-npm run build
-```
 
 ## 📂 Project Structure
 

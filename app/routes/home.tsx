@@ -64,7 +64,7 @@ export default function Home() {
                 <div className="meta">
                   <Clock size={12}/>
                   <span>{new Date('02/05/2026').toLocaleDateString()}</span>
-                  <span>By Shreyash</span>
+                  <span>By Shreyash Shetty</span>
                 </div>
               </div>
               <div className="arrow">
