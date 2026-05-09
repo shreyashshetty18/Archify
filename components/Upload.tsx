@@ -1,3 +1,4 @@
+import { CheckCircle2, ImageIcon, LoaderIcon, UploadIcon } from 'lucide-react';
 import React, { useState } from 'react'
 import { useOutletContext } from 'react-router';
 
@@ -5,10 +6,36 @@ const Upload = () => {
   const [file, setFile] = useState<File | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [progress, setProgress] = useState(0);
-  const {isSignedIn} = useOutletContext<AuthContext>();
+  const { isSignedIn } = useOutletContext<AuthContext>();
+
   return (
     <div className='upload'>
-    </div>
+      {!file ? (
+        <div className={`dropzone ${isDragging ? 'is-dragging' : ''}`}>
+          <input type="file" className='drop-input' accept=".jpeg,.jpg,.png" disabled={!isSignedIn} />
+          <div className='drop-content'>
+            <div className='drop-icon'>
+              <UploadIcon size={20} />
+            </div>
+            <p>
+              {isSignedIn ? 'Click to Upload or just Drag & Drop' : 'Please Sign In or Sign Up to upload your floor plan'}
+            </p>
+            <p className='help'>Maximum file size: 10MB</p>
+          </div>
+        </div>
+      ) : (
+        <div className='upload-status'>
+          <div className='status-content'>
+            <div className='status-icon'>
+              {progress === 100 ? (<CheckCircle2 className='check'/>
+              ) : (
+                <ImageIcon className='image' />
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </div >
   )
 }
 
